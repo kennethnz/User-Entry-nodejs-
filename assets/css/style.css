@@ -1,0 +1,267 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=PT+Sans&display=swap');
+
+
+
+:root{
+    --dark:#2b2d42;
+    --light:#adb5bd;
+    --border:#dee2e6;
+    --border-btn:#edf2f4;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.text-center{
+    text-align: center;
+}
+
+
+a{
+    text-decoration: none;
+    font-family: 'PT Sans', sans-serif;
+}
+
+
+.container{
+    max-width: 1024px;
+    margin: auto;
+}
+
+.nav-brand{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.justify-between{
+    justify-content: space-between;
+}
+
+
+.border-shadow{
+    border: 1px solid var(--border-btn);
+    box-shadow: 1px 3px 10px #e9ecef;
+}
+
+
+.text-dark{
+    color: var(--dark);
+}
+
+
+.text-heading{
+    color: blanchedalmond;
+}
+.text-gradient{
+    background: linear-gradient(to right,#8e2de2,#4a00e0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#header nav{
+    background-color: rgb(125, 125, 187);
+    padding: 1em 0;
+    width: 100%;
+}
+
+#site-main{
+    background-color: rgba(226, 220, 220, 0.7);
+    width: 70%;
+    margin: 7em auto;
+    font-family: 'Barlow',sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#site-main .container .box-nav > a{
+    font-size: 1em;
+    padding: .5em 1em;
+}
+
+#site-main .container form{
+    margin: 2em 0;
+}
+
+.inline{
+    display: inline-block;
+}
+
+table{
+    border-spacing: 0px;
+    width: 100%;
+}
+
+.table td, .table th{
+    padding: .75em;
+    vertical-align: top;
+    text-align: center;
+    border-top: 1px solid var(--border);
+}
+
+.table td > a.btn{
+    padding: .3em 1em;
+    font-size: 1.1em;
+    margin: .25em;
+}
+
+.table tr:hover{
+    background-color: rgb(117, 113, 107);
+    color:blanchedalmond;
+}
+
+
+
+.table tr:hover td >a{
+    box-shadow: none;
+}
+
+.table .thead-dark th{
+    color:white;
+    background-color: rgba(0, 0, 255, 0.644);
+    border-color: #32383e;
+}
+
+
+@media only screen and (max-width: 1024px){
+  table,thead,tbody,th,td,tr{
+      display: block;
+  }
+
+
+  thead tr{
+      
+      top:-999px ;
+      left: -999px;
+  }
+
+  tr{
+      border: 1px solid var(--border);
+  
+}
+ td{
+     border: none;
+     
+ }
+
+ #site-main{
+     padding: 1.5em;
+ }
+
+}
+
+
+/*add user A=& update*/
+
+.form-title{
+    margin-top: 2.5em;
+
+}
+
+.form-title > h2{
+    padding: 0.5em 0;
+}
+
+.new_user{
+    max-width: 787px;
+    margin: auto;
+}
+
+#update_user .form-group,
+#add_user .form-group{
+    margin: 0.5em 0 ;
+}
+
+#update_user .form-group input[type="text"],
+#add_user .form-group input[type="text"]{
+    width: 100%;
+    padding: .5em 1em;
+    margin: .5em 0;
+    border: 1px solid var(--border);
+    font-family: 'Barlow',sans-serif;
+    font-size: 1em;
+    border-radius: .5em;
+}
+
+#update_user .form-group .radio,
+#add_user .form-group .radio{
+    margin: 1em 2.5em;
+}
+
+
+#update_user .form-group .btn,
+#add_user .form-group .btn{
+width: 100%;
+padding: .9em 1em;
+background-color: #a0b6ae;
+border: none;
+font-family: 'PT Sans', sans-serif;
+font-size: 1em;
+cursor: pointer;
+border-radius: .25em;
+margin: .5em 0;
+
+}
+#update_user .form-group .btn:hover,
+#add_user .form-group .btn:hover{
+    background-color: #6daf97;
+    color: var(--border);
+}
+
+.delete{
+    cursor: pointer;
+}
+
+
+.modal{
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: aboslute;
+}
+
+
+.modal-page{
+    background-color: rgba(255, 255, 255, 0.24);
+    height: 15%;
+    width: 70%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.modal-page p{
+    margin-top: 5px;
+    color: red;
+    font-weight: bolder;
+    font-family: inherit;
+}
+.modal-page button {
+    width: 15%;
+    margin-top: 5px;
+
+}
+
+
+
